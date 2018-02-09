@@ -1,0 +1,4 @@
+<h2>{{branch}} branch has following {{heroes.length}} students : </h2>
+<app-child *ngFor="let student of studentList"
+  [student]="student" [branch]="branch">
+</app-child>
