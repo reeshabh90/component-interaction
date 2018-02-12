@@ -1,4 +1,5 @@
-<h2>{{branch}} branch has following {{heroes.length}} students : </h2>
+<h2>{{branch}} branch has following {{studentList.length}} students : </h2>
+<h3> Pass : {{pass}} , Fail : {{fail}}</h3>
 <app-child *ngFor="let student of studentList"
-  [student]="student" [branch]="branch">
+  [student]="student" [branch]="branch" (resultMarked)="onResultMarked($event)">
 </app-child>

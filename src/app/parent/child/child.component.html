@@ -1,2 +1,4 @@
 <h3>{{student.name}} has following details: </h3>
 <span> ID : {{student.id}}</span><span> CGPA : {{student.cgpa}}</span><span> Branch : {{branch}}</span>
+<button (click)="onClick(true)"  [disabled]="marked">Pass</button>
+<button (click)="onClick(false)" [disabled]="marked">Fail</button>

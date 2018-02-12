@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Student } from '../../student';
 
 @Component({
@@ -9,9 +9,15 @@ import { Student } from '../../student';
 export class ChildComponent implements OnInit {
   @Input() student: Student;
   @Input() branch: string;
+  @Output() resultMarked = new EventEmitter<boolean>();
+  marked = false;
   constructor() { }
 
   ngOnInit() {
+  }
+  onClick(result: boolean) {
+    this.resultMarked.emit(result);
+    this.marked = true;
   }
 
 }
