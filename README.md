@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
+This project set up with the help of angular-cli has been developed with the sole purpose to explain how component interaction happens in angular.
+
+Usually, the interacting components are divided into parent and child components, i.e., if 1 component encapsulates the other then logically the component encapsulating is "parent" while component being encapsulated is "child".
+
+The project focuses on interaction of this structure of components, like how data value changes are transmitted or event of one component can trigger something in other component.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
